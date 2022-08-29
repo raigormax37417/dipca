@@ -80,8 +80,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
-						<p class="site">www.yourdomainname.com</p>
-						<p class="num">Call: +01 123 456 7890</p>
+						<!-- <p class="site">www.yourdomainname.com</p> -->
+						<!-- <p class="num">Call: +01 123 456 7890</p> -->
 						<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-facebook2"></i></a></li>
 							<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -101,11 +101,10 @@
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li><a href="teacher.html">Teacher</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="pricing.html">Pricing</a></li>
-							<li class="has-dropdown">
+							<li><a href="courses.html">Nosotros</a></li>
+							<li><a href="teacher.html">Proyectos</a></li>
+							<li><a href="about.html">Servicios</a></li>
+							<!-- <li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
 									<li><a href="#">Web Design</a></li>
@@ -113,10 +112,8 @@
 									<li><a href="#">Branding</a></li>
 									<li><a href="#">API</a></li>
 								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
+							</li> -->
+							<li><a href="contact.html">Contacto</a></li>
 						</ul>
 					</div>
 				</div>
@@ -134,37 +131,36 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
-									<h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg" href="#">Start Learning Now!</a></p>
+			   					<h1>BIENVENIDOS</h1>
+									<h2>DIPCA les da la bienvenida a esta su empresa</h2>
 			   				</div>
 			   			</div>
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   	<li style="background-image: url(images/construction-zoom.webp);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>The Great Aim of Education is not Knowledge, But Action</h1>
-									<h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+			   					<h1>Descubre los servicios que podemos ofrecerte</h1>
+									<!-- <h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2> -->
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#fh5co-course-categories">Ver!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   	<li style="background-image: url(images/construction-10.webp);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>We Help You to Learn New Things</h1>
-									<h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+			   					<h1>Conoce mas acerca de los proyectos que nos respaldan</h1>
+									<!-- <h2>Brought to you by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2> -->
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#fh5co-course">Ver!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -352,7 +348,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(images/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
+	<!-- <div id="fh5co-counter" class="fh5co-counters" style="background-image: url(images/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -382,7 +378,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="fh5co-course">
 		<div class="container">
@@ -393,7 +389,21 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content" id="modalContent">
+					</div>
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="sabinos">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/sabino1.png);">
 						</a>
@@ -403,11 +413,11 @@
 							<p><b>Localidad:</b> Los Sabinos</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2018</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#sabinos" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="ojodeagua">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/ojodeagua1.png);">
 						</a>
@@ -417,11 +427,11 @@
 							<p><b>Localidad:</b> El Ojo de Agua</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2018</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#ojodeagua" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="suchil">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/suchil1.png);">
 						</a>
@@ -431,11 +441,11 @@
 							<p><b>Localidad:</b> El Suchil</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2018</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#suchil" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="ampliacion">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/ampliacion1.png);">
 						</a>
@@ -445,13 +455,13 @@
 							<p><b>Localidad:</b> San Ramón</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2018</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#ampliacion" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="sanjosexoxo">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/sanjosexoxo3.png);">
 						</a>
@@ -461,13 +471,13 @@
 							<p><b>Localidad:</b> Colonia Colinas de San José</p>
 							<p><b>Municipio:</b>Santa Cruz Xoxocotlán, Centro.</p>
 							<p><b>Año:</b>2018</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#sanjosexoxo" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-			    <div class="col-md-6 col-lg-6 animate-box custom-padding">
+			    <div class="col-md-6 col-lg-6 animate-box custom-padding" id="comesuchil">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/suchil1.png);">
+						<a href="#" class="course-img" style="background-image: url(images/comesuchil1.png);">
 						</a>
 						<div class="desc">
 							<h3><a href="#">COMEDOR COMUNITARIO</a></h3>
@@ -475,13 +485,13 @@
 							<p><b>Localidad:</b> El Súchil</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2019</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#comesuchil" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="carrisal">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/carrisal1.png);">
 						</a>
@@ -491,11 +501,11 @@
 							<p><b>Localidad:</b> El Carrizal</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2019</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#carrisal" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="naranja">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/naranja1.png);">
 						</a>
@@ -505,13 +515,13 @@
 							<p><b>Localidad:</b> Naranjales</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2019</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#naranja" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="zaniza">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/zaniza1.png);">
 						</a>
@@ -521,11 +531,25 @@
 							<p><b>Localidad:</b> Atotonilco</p>
 							<p><b>Municipio:</b>Santa María Zaniza, Sola de Vega.</p>
 							<p><b>Año:</b>2019</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#zaniza" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="cancha">
+					<div class="course">
+						<a href="#" class="course-img" style="background-image: url(images/cancha1.png);">
+						</a>
+						<div class="desc">
+							<h3><a href="#">CANCHA DEPORTIVA EN LA ESCUELA MELCHOR OCAMPO</a></h3>
+							<p><b>Obra:</b> "Construcción de cancha deportiva en la escuela primaria melchor ocampo".</p>
+							<p><b>Localidad:</b> Rio Nube</p>
+							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
+							<p><b>Año:</b>2020</p>
+							<span><a href="#cancha" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="techado">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/tech1.png);">
 						</a>
@@ -535,11 +559,11 @@
 							<p><b>Localidad:</b> Rio Nube</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#techado" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="barda">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/barda1.png);">
 						</a>
@@ -549,11 +573,13 @@
 							<p><b>Localidad:</b> Rio Nube</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#barda" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="chicagua">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/chicagua4.png);">
 						</a>
@@ -563,13 +589,11 @@
 							<p><b>Localidad:</b> San Miguel Chicahua</p>
 							<p><b>Municipio:</b>San Miguel Chicahua, Nochixtlan.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#chicagua" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="tila">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/saniseco.png);">
 						</a>
@@ -579,11 +603,11 @@
 							<p><b>Localidad:</b> Buena Vista</p>
 							<p><b>Municipio:</b>Santiago Tilaltongo, Nochixtlan.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#tila" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="cuartilla">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/cuartila2.png);">
 						</a>
@@ -593,11 +617,11 @@
 							<p><b>Localidad:</b> Buena Vista</p>
 							<p><b>Municipio:</b>Santiago Tilaltongo, Nochixtlan.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#cuartilla" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 animate-box custom-padding">
+				<div class="col-md-6 col-lg-6 animate-box custom-padding" id="sanjose">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(images/sanjose1.png);">
 						</a>
@@ -607,7 +631,7 @@
 							<p><b>Localidad:</b> San José</p>
 							<p><b>Municipio:</b>San Lorenzo Texmelucan, Sola de Vega.</p>
 							<p><b>Año:</b>2020</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
+							<span><a href="#sanjose" class="btn btn-primary btn-sm btn-course">Ver imágenes</a></span>
 						</div>
 					</div>
 				</div>
@@ -615,7 +639,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
+	<!-- <div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
@@ -659,7 +683,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>

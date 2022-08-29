@@ -294,3 +294,211 @@
 
 
 }());
+/* LIGHTBOX MODAL */
+// Open the Modal
+let elements = document.querySelectorAll(".btn-course");
+let modalContent = document.getElementById('modalContent');
+
+const sabino = {
+	one: "images/sabino1.png",
+	two: "images/sabino2.png",
+	three: "images/sabino3.png",
+	four: "images/sabino4.png"
+}
+const ojodeagua = {
+	one: "images/ojodeagua1.png",
+	two: "images/ojodeagua2.png",
+	three: "images/ojodeagua3.png",
+	four: "images/ojodeagua4.png"
+}
+const suchil = {
+	one: "images/suchil1.png",
+	two: "images/suchil2.png",
+	three: "images/suchil3.png"
+}
+const ampliacion = {
+	one: "images/ampliacion1.png",
+	two: "images/ampliacion2.png",
+	three: "images/ampliacion3.png"
+}
+const sanjosexoxo = {
+	one: "images/sanjosexoxo1.png",
+	two: "images/sanjosexoxo2.png",
+	three: "images/sanjosexoxo3.png",
+	four: "images/sanjosexoxo4.png"
+}
+const comesuchil = {
+	one: "images/comesuchil1.png",
+	two: "images/comesuchil2.png",
+	three: "images/comesuchil3.png",
+	four: "images/comesuchil4.png"
+}
+const carrizal = {
+	one: "images/carrisal1.png",
+	two: "images/carrisal2.png",
+	three: "images/carrisal3.png",
+	four: "images/carrisal4.png"
+}
+const naranja = {
+	one: "images/naranja1.png",
+	two: "images/naranja2.png",
+	three: "images/naranja3.png"
+}
+const zaniza = {
+	one: "images/zaniza1.png",
+	two: "images/zaniza2.png",
+	three: "images/zaniza3.png"
+}
+const cancha = {
+	one: "images/cancha1.png",
+	two: "images/cancha2.png",
+	three: "images/cancha3.png",
+	four: "images/cancha4.png"
+}
+const techado = {
+	one: "images/tech1.png",
+	two: "images/tech2.png",
+	three: "images/tech3.png",
+	four: "images/tech4.png"
+}
+const barda = {
+	one: "images/barda1.png",
+	two: "images/barda2.png",
+}
+const chicagua = {
+	one: "images/chicagua1.png",
+	two: "images/chicagua2.png",
+	three: "images/chicagua3.png",
+	four: "images/chicagua4.png",
+	five: "images/chicagua5.png"
+}
+const tila = {
+	one: "images/tila1.png",
+	two: "images/tila2.png",
+	three: "images/tila3.png",
+	four: "images/tila4.png"
+}
+const cuartila = {
+	one: "images/cuartila1.png",
+	two: "images/cuartila2.png"
+}
+const sanjose = {
+	one: "images/sanjose1.png",
+	two: "images/sanjose2.png",
+	three: "images/sanjose3.png",
+	four: "images/sanjose4.png"
+}
+elements.forEach((element, index) => {
+	element.addEventListener('click', function() {
+		openModal();
+		console.log(element, index);
+		loadImages(index);
+	});
+})
+function addObjectImages(object) {
+	modalContent.innerHTML = "";
+	const keys = Object.values(object);
+	const objectLength = Object.values(object).length;
+	let suma = 1;
+	for(const key of keys) {
+		if (suma === 1) {
+			modalContent.innerHTML+= `<div class="mySlides" style="display: block;">
+			<div class="numbertext">${suma} / ${objectLength}</div>
+				<img alt="images-sabino" src="${key}" style="width:100%; max-height: 400px;">
+			</div>`;
+		}
+		modalContent.innerHTML+= `<div class="mySlides">
+				<div class="numbertext">${suma} / ${objectLength}</div>
+				<img alt="images-sabino" src="${key}" style="width:100%; max-height: 400px;">
+				</div>`;
+				suma++;
+	}
+}
+function loadImages(index) {
+	switch (index) {
+		case 0:
+			addObjectImages(sabino);
+		break;
+		case 1:
+			addObjectImages(ojodeagua);
+		break;
+		case 2: 
+			addObjectImages(suchil);
+		break;
+		case 3: 
+			addObjectImages(ampliacion);
+		break;
+		case 4: 
+			addObjectImages(sanjosexoxo);
+		break;
+		case 5:
+			addObjectImages(comesuchil);
+		break;
+		case 6: 
+			addObjectImages(carrizal);
+		break;
+		case 7:
+			addObjectImages(naranja);
+		break;
+		case 8:
+			addObjectImages(zaniza);
+		break;
+		case 9:
+			addObjectImages(cancha);
+		break;
+		case 10:
+			addObjectImages(techado);
+		break;
+		case 11:
+			addObjectImages(barda);
+		break;
+		case 12:
+			addObjectImages(chicagua);
+		break;
+		case 13:
+			addObjectImages(tila);
+		break;
+		case 14: 
+			addObjectImages(cuartilla);
+		break;
+		case 15:
+			addObjectImages(sanjose);
+		break;
+		default:
+		break;
+	}
+}
+
+function openModal() {
+	document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+	showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+	showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+	  slides[i].style.display = "none";
+	}
+	slides[slideIndex-1].style.display = "block";
+  }
